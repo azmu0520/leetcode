@@ -5,7 +5,7 @@
 
 ## Problem
 
-\*Bizga sonlardan tashkil topgan `array`(nums) va aniq bir son berilgan (target). `Array` ichidagi 2 elementning qo'shilishi evaziga `target`ga teng bo'ladigan elementlarning index raqamini toping.
+\*\*\*Bizga sonlardan tashkil topgan `array`(nums) va aniq bir son berilgan (target). `Array` ichidagi 2 elementning qo'shilishi evaziga `target`ga teng bo'ladigan elementlarning index raqamini toping.
 
 Har bir `array`dan bir dona javob chiqadi deb o'ylashingiz mumkin.
 
