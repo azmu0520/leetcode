@@ -1,17 +1,17 @@
 # 1. Two Sum
 
-- **Difficulty**: Easy
-- **Related Topics**: Array, Hash Table
+- **Murakablik**: Easy
+- **Tegishlik Mavzular**: Array, Hash Table
 
-## Problem
+## Masala
 
-\*\*\*Bizga sonlardan tashkil topgan `array`(nums) va aniq bir son berilgan (target). `Array` ichidagi 2 elementning qo'shilishi evaziga `target`ga teng bo'ladigan elementlarning index raqamini toping.
+- Bizga sonlardan tashkil topgan `array`(nums) va aniq bir son berilgan (target). `Array` ichidagi 2 elementning qo'shilishi evaziga `target`ga teng bo'ladigan elementlarning index raqamini toping.
 
-Har bir `array`dan bir dona javob chiqadi deb o'ylashingiz mumkin.
+- Har bir `array`dan bir dona javob chiqadi deb o'ylashingiz mumkin.
 
-Bir xil elementni ikki marta ishlata olmaysiz.
+- Bir xil elementni ikki marta ishlata olmaysiz.
 
-Javobni istalgan tartibda qaytarishingiz mumkin.
+- Javobni istalgan tartibda qaytarishingiz mumkin.
 
 ### Example
 
@@ -20,7 +20,12 @@ Given `nums = [2, 7, 11, 15]`, `target = 9`,
 Because `nums[0] + nums[1] = 2 + 7 = 9`,
 return `[0, 1]`.
 
-## Solution
+### Qo'shimcha yordam!
+
+- Barcha mos keluvchi juftliklarni solishtirish orqali ham masalaga yechim topishlik mumkin ammo bu funkisyani sekinlashtirib yuboradi. Shunga qaramay mukamal yechimni topish uchun shu yolni sinab korish yaxshi.
+- `Array`ning asiliyatini o'zgartirmay turib , `hash map`dan foydalanib tezlikni oshira olamiz.
+
+## Javob-1 (171 ms,49.64MB)
 
 ```javascript
 /**
@@ -29,7 +34,31 @@ return `[0, 1]`.
  * @return {number[]}
  */
 var twoSum = function (nums, target) {
-  var hash = {};
+  let res = [];
+  label: for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length; j++) {
+      if (i !== j) {
+        if (nums[i] + nums[j] == target) {
+          res = [i, j];
+          break label;
+        }
+      }
+    }
+  }
+  return res;
+};
+```
+
+## Javob-2 (54 ms,51.5 MB)
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function (nums, target) {
+  var hash = {}; // Bu obyekt nums massividagi elementlar indekslarini saqlash uchun xesh-jadval sifatida ishlatiladi.
   var len = nums.length;
   for (var i = 0; i < len; i++) {
     if (nums[i] in hash) return [hash[nums[i]], i];
