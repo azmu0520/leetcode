@@ -1,22 +1,20 @@
 # 1. Two Sum
 
-- Difficulty: Easy.
-- Related Topics: Array, Hash Table.
-- Similar Questions: 3Sum, 4Sum, Two Sum II - Input array is sorted, Two Sum III - Data structure design, Subarray Sum Equals K, Two Sum IV - Input is a BST.
+- **Difficulty**: Easy
+- **Related Topics**: Array, Hash Table
 
 ## Problem
 
-Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
-You may assume that each input would have **exactly** one solution, and you may not use the same element twice.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
-**Example:**
+### Example
 
-```
-Given nums = [2, 7, 11, 15], target = 9,
-Because nums[0] + nums[1] = 2 + 7 = 9,
-return [0, 1].
-```
+Given `nums = [2, 7, 11, 15]`, `target = 9`,
+
+Because `nums[0] + nums[1] = 2 + 7 = 9`,
+return `[0, 1]`.
 
 ## Solution
 
@@ -36,12 +34,3 @@ var twoSum = function (nums, target) {
   return [-1, -1];
 };
 ```
-
-**Explain:**
-
-nope.
-
-**Complexity:**
-
-- Time complexity : O(n).
-- Space complexity : O(n).
