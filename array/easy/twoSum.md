@@ -5,9 +5,13 @@
 
 ## Problem
 
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+Bizga sonlardan tashkil topgan `array`(nums) va aniq bir son berilgan (target). `Array` ichidagi 2 elementning qo'shilishi evaziga `target`ga teng bo'ladigan elementlarning index raqamini toping.
 
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+Har bir `array`dan bir dona javob chiqadi deb o'ylashingiz mumkin.
+
+Bir xil elementni ikki marta ishlata olmaysiz.
+
+Javobni istalgan tartibda qaytarishingiz mumkin.
 
 ### Example
 
