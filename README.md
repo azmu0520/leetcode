@@ -2,11 +2,10 @@
 
 ### LeetCode Algorithm
 
-| #   | Title                                                                         | Solution                                                 | Tag    | Difficulty |
-| --- | ----------------------------------------------------------------------------- | -------------------------------------------------------- | ------ | ---------- |
-| 1   | [Two Sum](https://leetcode.com/problems/two-sum/)                             | [JavaScript](./Algorithms/Easy/1.twoSum.js)              | Easy   |
-| 2   | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)         | [JavaScript](./Algorithms/Easy/2.palindromeNumber.js)    | Easy   |
-| 3   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)           | [JavaScript](./Algorithms/Easy/3.romanToInt.js)          | Easy   |
-| 4   | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [JavaScript](./Algorithms/Easy/4.longestCommonPrefix.js) | Easy   |
-| 5   | [one](https://leetcode.com/problems/valid-parentheses/)                       | [JavaScript](./Algorithms/Easy/5.isValid.js)             | Easy   |
-| 6   | [new one](https://leetcode.com/problems/length-of-last-word/)                 | [JavaScript](./Algorithms/Easy/6.lengthOfLastWord.js)    | String | Easy       |
+| #   | Title                                                                                                        | Solution                                          | Tag   | Difficulty |
+| --- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- | ----- | ---------- |
+| 1   | [1. Two Sum](https://leetcode.com/problems/two-sum/)                                                         | [JavaScript](./array/easy/1.twoSum.md)            | Array | Easy       |
+| 2   | [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | [JavaScript](./array/easy/26.removeDuplicates.md) | Array | Easy       |
+| 3   | [27. Remove Element](https://leetcode.com/problems/remove-element)                                           | [JavaScript](./array/easy/27.removeElement.md)    | Array | Easy       |
+| 4   | [35. Search Insert Position](https://leetcode.com/problems/search-insert-position)                           | [JavaScript](./array/easy/35.searchInsert.md)     | Array | Easy       |
+| 5   | []()                                                                                                         | [JavaScript](./array/)                            | Array | Easy       |

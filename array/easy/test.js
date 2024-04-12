@@ -1,16 +1,19 @@
-var twoSum = function (nums, target) {
-  let res = [];
-  label: for (let i = 0; i < nums.length; i++) {
-    for (let j = 0; j < nums.length; j++) {
-      if (i !== j) {
-        if (nums[i] + nums[j] == target) {
-          res = [i, j];
-          break label;
-        }
-      }
+var searchInsert = function (nums, target) {
+  let start = 0;
+  let end = nums.length - 1;
+
+  while (start <= end) {
+    let middle = Math.floor((start + end) / 2);
+    if (nums[middle] === target) {
+      return middle;
+    } else if (nums[middle] < target) {
+      start = middle + 1;
+    } else {
+      end = middle - 1;
     }
+    console.log(start, end);
   }
-  return res;
+  return start;
 };
 
-console.log(twoSum([3, 3, 1, 1, 5], 6));
+console.log(searchInsert([1, 3, 5, 6], 8));
