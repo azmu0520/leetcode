@@ -1,19 +1,6 @@
-var searchInsert = function (nums, target) {
-  let start = 0;
-  let end = nums.length - 1;
-
-  while (start <= end) {
-    let middle = Math.floor((start + end) / 2);
-    if (nums[middle] === target) {
-      return middle;
-    } else if (nums[middle] < target) {
-      start = middle + 1;
-    } else {
-      end = middle - 1;
-    }
-    console.log(start, end);
-  }
-  return start;
+var merge = function (nums1, m, nums2, n) {
+  nums1.splice(m, nums1.length, ...nums2.splice(0, n));
+  nums1 = nums1.sort((a, b) => a - b);
+  return nums1;
 };
-
-console.log(searchInsert([1, 3, 5, 6], 8));
+console.log(merge([1, 2, 3, 0, 0, 0], 0, [2, 5, 6], 3));
