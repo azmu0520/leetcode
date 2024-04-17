@@ -1,10 +1,5 @@
-var generate = function (numRows) {
-  let res = [];
-  for (let i = 0; i < numRows; i++) {
-    let item = [];
-    for (let j = 0; j < i; j++) {}
-  }
-
+var singleNumber = function (nums) {
+  let res = eval(nums.join("^"));
   return res;
 };
-console.log(generate(5));
+console.log(singleNumber([1]));
