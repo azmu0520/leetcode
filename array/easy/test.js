@@ -1,5 +1,5 @@
-var singleNumber = function (nums) {
-  let res = eval(nums.join("^"));
-  return res;
+var containsDuplicate = function (nums) {
+  let res = Array.from(new Set(nums));
+  return res.length !== nums.length;
 };
-console.log(singleNumber([1]));
+console.log(containsDuplicate([1, 2, 3]));
