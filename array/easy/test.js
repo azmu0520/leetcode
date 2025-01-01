@@ -1,5 +1,4 @@
-var containsDuplicate = function (nums) {
-  let res = Array.from(new Set(nums));
-  return res.length !== nums.length;
+var containsNearbyDuplicate = function (nums, k) {
+  let dup = Array.from(new Set(nums)).length !== nums.length;
 };
-console.log(containsDuplicate([1, 2, 3]));
+console.log(containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2));
